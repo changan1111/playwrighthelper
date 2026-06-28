@@ -207,7 +207,7 @@ function loadDay(wi,di){
   else if(wi<DATA.length-1) nextBtn='<button class="nxb" onclick="loadDay('+(wi+1)+',0)">Next week &rarr;</button>';
   ds.innerHTML='<div class="dh"><div class="de" style="color:'+week.color+'">Week '+week.week+': '+week.title+' &mdash; Day '+day.day+'</div><div class="dt">'+day.title+'</div><div class="ds">'+day.subtitle+'</div><div class="dm">'+tagsHTML+'</div></div>'+
   '<div class="dpb"><div class="dpl"><span>Questions answered</span><span id="ac">'+ac+'/'+day.questions.length+'</span></div><div class="dps" id="dots">'+dotsHTML+'</div></div>'+
-  '<div class="sec"><div class="stl">Today's plan</div><div class="pg">'+planHTML+'</div></div>'+
+  '<div class="sec"><div class="stl">Today plan</div><div class="pg">'+planHTML+'</div></div>'+
   '<div class="sec"><div class="stl">Key topics</div><div class="lt">'+ltaHTML+'</div></div>'+
   '<div class="sec"><div class="stl">Questions ('+day.questions.length+') &mdash; attempt before revealing</div>'+qHTML+'</div>'+
   '<button class="cdb'+(isDone?' completed':'')+'" id="cdb" onclick="completeDay('+wi+','+di+')">'+(isDone?'&#9989; Day complete! Challenge Claude when ready.':'&#10003; Mark day as complete')+'</button>'+
